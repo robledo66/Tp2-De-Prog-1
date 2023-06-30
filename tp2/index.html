@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dude Store</title>
+</head>
+<body>
+    <header>
+        <h1>Dude project</h1>
+    </header>
+    <main style="padding: 20px;">
+        <section>
+            <h2>Catálogo de Productos</h2>
+            <div id="productos-lista"></div>
+           
+
+        </section>
+
+        <label for="filtro-categoria">Filtrar por categoría:</label>
+        <select id="filtro-categoria" onchange="filtrarPorCategoria()">
+            <option value="todos">Todos</option>
+            <option value="Categoría 1">Microfones</option>
+            <option value="Categoría 2">Laptops</option>
+            <option value="Categoría 3">Smartphones</option>
+        </select>
+
+        <section>
+            <h2>Carrito de Compras</h2>
+        
+            <div id="carrito">
+                <p>Productos en el carrito: <span id="carrito-cantidad">0</span></p>
+                <p>Total: <span id="carrito-total"></span></p>
+                <button id="abrirModal">Ver Carrito</button>
+            </div>
+           
+        </section>
+    </main>
+    <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4);">
+        <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%;">
+            <span id="cerrarModal" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-modal">
+                <p>Productos en el carrito: <span id="carrito-cantidad-modal">0</span></p>
+                <p>Total: <span id="carrito-total-modal"></span></p>
+                <div id="productos-carrito-modal"></div>
+                <div id="detalle-productos-carrito-modal"></div>
+                <p>Valor total: <span id="valor-total-modal"></span></p>
+                
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
+
+    <footer>
+        <ul>
+            <li>Alumno Joel Robledo</li>
+            <li>
+                <a href="mailto:joel.robledo@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">joel.robledo@davinci.edu.ar</a>
+            </li>
+            <li>Programación 1</li>
+        </ul>
+    </footer>
+</body>
+</html>

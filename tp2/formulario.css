@@ -1,0 +1,52 @@
+
+  .container {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: cadetblue;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+ 
+  .form-control {
+    margin-bottom: 20px;
+    padding: 8px;
+  }
+
+ 
+  .btn-primary {
+    width: 50%;
+   margin-inline-start: 25%;
+  }
+
+ 
+  .volver-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #be8a8a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .volver-btn:hover {
+    box-shadow: 0 0 5px rgba(27, 2, 2, 0.923);
+    box-shadow:rgba(175, 2, 2, 0.5); ;
+  }
+
+  .error-input {
+    border: 2px solid red !important;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 5px;
+  }
+  
